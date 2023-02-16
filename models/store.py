@@ -19,7 +19,7 @@ class StoreModel(db.Model):
      
     @classmethod
     def find_all(cls):
-        return cls.query.filter()
+        return cls.query.all()
    
     def save_to_db(self):
         db.session.add(self)
